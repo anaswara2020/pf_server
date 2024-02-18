@@ -20,7 +20,7 @@ pfServer.use(router)
 //available file/folder from server to other application
 pfServer.use('/uploads',express.static('./uploads'))
 
-const PORT=3000
+const PORT=3000 || process.env.PORT
 
 //to host pfServer:localhost 3000
 pfServer.listen(PORT,()=>{
